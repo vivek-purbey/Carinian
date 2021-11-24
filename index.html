@@ -1,0 +1,886 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- ----------------------------------------------------------------- -->
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="home.css">
+  <link rel="icon" href="images/logo.png" type="image/icon type">
+  <script src="https://kit.fontawesome.com/7a300e81b2.js" crossorigin="anonymous"></script>
+  <!-- -----------------footer------------------------------ -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <!-- -----------------latest cars---------------------------- -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+  <!-- ----------------------------------------------------- -->
+  <title>Carinian Website</title>
+</head>
+
+<body>
+
+  <!-- ------------------nav----------------------- -->
+  <nav class="navbar" id="navbar">
+    <a href="./index.html" class="logo">
+      <img src="images/logo.png" alt="" id="logo">
+      <span>Carinian</span>
+    </a>
+
+    <button class="ham" id="ham1"><i class="fas fa-bars"></i></button>
+
+    <ul class="menu lists" id="menu">
+      <li><a href="" id="home">HOME</a></li>
+      <li><a href="./Ruchika/about-us/about.html">ABOUT US</a></li>
+      <li><a href="./Ruchika/our-services/services.html">OUR SERVICES</a></li>
+      <li><a href="./Deepika/compare-ads.html">COMPARE ADS</a></li>
+      <li><a href="./Vivek/Contact Us/contact.html">CONTACT US</a></li>
+    </ul>
+
+    <button class="ham" id="ham2"><i class="fas fa-bars"></i></button>
+
+    <ul class="account lists" id="account">
+      <li><a href="./Vivek/Login/login.html">LOGIN</a></li>
+      <li><a href="./Vivek/Register/register.html">REGISTER</a></li>
+      <li><a href="./Vivek/Login/login.html"><button type="button">TRADE CARS</button></a></li>
+    </ul>
+  </nav>
+  <div class="scroll" id="scroll">
+    <i class="fas fa-angle-up"></i>
+  </div>
+  <!-- ---------------home header------------------ -->
+  <div id="carouselExampleCaptions" class="carousel slide carousel-fade mb-5" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active d-flex flex-column justify-content-center align-items-center" id="slide1">
+        <div class="container d-flex flex-column justify-content-center align-items-center">
+          <h2 class="display-3 mb-2 text-light" id="heading">Find Your Dream Car</h2>
+          <p class="fs-5 text-light mb-2 text-center">Our Carinian experts inspect the car on over 200 checkpoints so
+            you get
+            complete satisfaction and peace
+          </p>
+          <ul class="list-group col-auto mb-3">
+            <li class="list-group-item bg-transparent text-light border-0 fs-5 d-flex align-items-center"><i
+                class="far fa-thumbs-up me-1"></i>Post
+              your car's ad for free in 30 seconds</li>
+            <li class="list-group-item bg-transparent text-light border-0 fs-5 d-flex align-items-center"><i
+                class="far fa-thumbs-up me-1"></i>Get
+              authentic offers from verified buyers</li>
+            <li class="list-group-item bg-transparent text-light border-0 fs-5 d-flex align-items-center"><i
+                class="far fa-thumbs-up me-1"></i>Sell
+              your car faster than others at a better price</li>
+          </ul>
+          <a class="btn btn-primary post fs-5" href="#post" role="button">Post Your Car</a>
+        </div>
+      </div>
+      <div class="carousel-item" id="slide2">
+        <div class="container d-flex flex-column justify-content-center align-items-center" id="form-container">
+          <div class="container d-flex flex-column justify-content-center align-items-center mb-3">
+            <h2 class="display-4 mb-2 text-light">17,000+</h2>
+            <p class="fs-5 text-light col-auto text-center">Used Cars for Sale in Your Town Search Now!</p>
+          </div>
+          <form action="submit" class=" bg-opacity-50 bg-white col-auto rounded-3 p-4">
+            <div class="mb-3">
+              <label for="formGroupExampleInput" class="form-label text-start">Search Keyword</label>
+              <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Enter Keyword">
+            </div>
+            <label for="dropdown" class="form-label text-start">Select Type</label>
+            <select class="form-select mb-3" aria-label="Default select example" id="dropdown">
+              <option selected>Car Type</option>
+              <option value="1">SUV</option>
+              <option value="2">Sports</option>
+              <option value="3">Vintage</option>
+              <option value="4">Daily Driver</option>
+            </select>
+            <label for="dropdown1" class="form-label text-start">Select Brand</label>
+            <select class="form-select mb-3" aria-label="Default select example" id="dropdown1">
+              <option selected>Car Brand</option>
+              <option value="1">Ferrari</option>
+              <option value="2">Mercedes</option>
+              <option value="3">Audi</option>
+            </select>
+            <div class="d-grid gap-2">
+              <button class="btn btn-primary post fs-5" type="button">Search</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <!-- -------------------latest featured cars---------------------------------------------------- -->
+  <section class="featured mb-5" id="featured">
+
+    <div class="container d-flex justify-content-center">
+      <h2 class="display-4 text-dark text-center col-auto mb-5" id="heading"><span id="post">Latest Featured cars</span></h2>
+    </div>
+
+    <div class="swiper featured-slider">
+
+      <div class="swiper-wrapper">
+
+        <div class="swiper-slide box">
+          <img src="./Ruchika/image/car-1.png" alt="">
+          <div class="content">
+            <h3 class="fs-5 fw-bold">new model</h3>
+            <div class="stars fs-6">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <div class="price fs-4 fw-bold">$55,000/-</div>
+            <a href="#" class="btn fs-5">check out</a>
+          </div>
+        </div>
+
+        <div class="swiper-slide box">
+          <img src="./Ruchika/image/car-2.png" alt="">
+          <div class="content">
+            <h3 class="fs-5 fw-bold">new model</h3>
+            <div class="stars fs-6">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <div class="price fs-4 fw-bold">$55,000/-</div>
+            <a href="#" class="btn fs-5">check out</a>
+          </div>
+        </div>
+
+        <div class="swiper-slide box">
+          <img src="./Ruchika/image/car-3.png" alt="">
+          <div class="content">
+            <h3 class="fs-5 fw-bold">new model</h3>
+            <div class="stars fs-6">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <div class="price fs-4 fw-bold">$55,000/-</div>
+            <a href="#" class="btn fs-5">check out</a>
+          </div>
+        </div>
+
+        <div class="swiper-slide box">
+          <img src="./Ruchika/image/car-4.png" alt="">
+          <div class="content">
+            <h3 class="fs-5 fw-bold">new model</h3>
+            <div class="stars fs-6">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <div class="price fs-4 fw-bold">$55,000/-</div>
+            <a href="#" class="btn fs-5">check out</a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="swiper-pagination"></div>
+
+    </div>
+
+    <div class="swiper featured-slider">
+
+      <div class="swiper-wrapper">
+
+        <div class="swiper-slide box">
+          <img src="./Ruchika/image/car-5.png" alt="">
+          <div class="content">
+            <h3 class="fs-5 fw-bold">new model</h3>
+            <div class="stars fs-6">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <div class="price fs-4 fw-bold">$55,000/-</div>
+            <a href="#" class="btn fs-5">check out</a>
+          </div>
+        </div>
+
+        <div class="swiper-slide box">
+          <img src="./Ruchika/image/car-6.png" alt="">
+          <div class="content">
+            <h3 class="fs-5 fw-bold">new model</h3>
+            <div class="stars fs-6">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <div class="price fs-4 fw-bold">$55,000/-</div>
+            <a href="#" class="btn fs-5">check out</a>
+          </div>
+        </div>
+
+        <div class="swiper-slide box">
+          <img src="./Ruchika/image/car-7.png" alt="">
+          <div class="content">
+            <h3 class="fs-5 fw-bold">new model</h3>
+            <div class="stars fs-6">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <div class="price fs-4 fw-bold">$55,000/-</div>
+            <a href="#" class="btn fs-5">check out</a>
+          </div>
+        </div>
+
+        <div class="swiper-slide box">
+          <img src="./Ruchika/image/car-8.png" alt="">
+          <div class="content">
+            <h3 class="fs-5 fw-bold">new model</h3>
+            <div class="stars fs-6">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <div class="price fs-4 fw-bold">$55,000/-</div>
+            <a href="#" class="btn fs-5">check out</a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="swiper-pagination"></div>
+
+    </div>
+
+  </section>
+  <!-----------------------services provided------------------------------------------------------ -->
+  <section class="services mb-5" id="services">
+
+    <div class="container d-flex justify-content-center">
+      <h2 class="display-4 text-dark text-center col-auto mb-5" id="heading">Services Provided</h2>
+    </div>
+
+    <div class="box-container">
+
+      <div class="box">
+        <i class="fas fa-car"></i>
+        <h3 class="fs-4 fw-bold">car selling</h3>
+        <p class="fs-6">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis, nisi.</p>
+        <a href="#" class="btn fs-5"> read more</a>
+      </div>
+
+      <div class="box">
+        <i class="fas fa-tools"></i>
+        <h3 class="fs-4 fw-bold">parts repair</h3>
+        <p class="fs-6">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis, nisi.</p>
+        <a href="#" class="btn fs-5"> read more</a>
+      </div>
+
+      <div class="box">
+        <i class="fas fa-car-crash"></i>
+        <h3 class="fs-4 fw-bold">car insurance</h3>
+        <p class="fs-6">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis, nisi.</p>
+        <a href="#" class="btn fs-5"> read more</a>
+      </div>
+
+      <div class="box">
+        <i class="fas fa-car-battery"></i>
+        <h3 class="fs-4">battery replacement</h3>
+        <p class="fs-6">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis, nisi.</p>
+        <a href="#" class="btn fs-5"> read more</a>
+      </div>
+
+      <div class="box">
+        <i class="fas fa-gas-pump"></i>
+        <h3 class="fs-4 fw-bold">oil change</h3>
+        <p class="fs-6">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis, nisi.</p>
+        <a href="#" class="btn fs-5"> read more</a>
+      </div>
+
+      <div class="box">
+        <i class="fas fa-headset"></i>
+        <h3 class="fs-4 fw-bold">24/7 support</h3>
+        <p class="fs-6">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis, nisi.</p>
+        <a href="#" class="btn fs-5"> read more</a>
+      </div>
+
+    </div>
+
+  </section>
+  <!-- ---------------------trending ads---------------------------------------------------------- -->
+  <section class="vehicles mb-5" id="vehicles">
+
+    <div class="container d-flex justify-content-center">
+      <h2 class="display-4 text-dark text-center col-auto mb-5" id="heading">Trending Car Ads</h2>
+    </div>
+
+    <div class="swiper vehicles-slider">
+
+      <div class="swiper-wrapper">
+
+        <div class="swiper-slide box">
+          <img src="./Ruchika/image/vehicle-1.png" alt="">
+          <div class="content">
+            <h3 class="fs-2">new model</h3>
+            <div class="price fs-4"> <span>price : </span> $62,000/- </div>
+            <p class="fs-6">
+              new
+              <span class="fas fa-circle"></span> 2021
+              <span class="fas fa-circle"></span> automatic
+              <span class="fas fa-circle"></span> petrol
+              <span class="fas fa-circle"></span> 183mph
+            </p>
+            <a href="#" class="btn fs-5">Buy Now</a>
+          </div>
+        </div>
+
+        <div class="swiper-slide box">
+          <img src="./Ruchika/image/vehicle-2.png" alt="">
+          <div class="content">
+            <h3 class="fs-2">new model</h3>
+            <div class="price fs-4"> <span>price : </span> $62,000/- </div>
+            <p class="fs-6">
+              new
+              <span class="fas fa-circle"></span> 2021
+              <span class="fas fa-circle"></span> automatic
+              <span class="fas fa-circle"></span> petrol
+              <span class="fas fa-circle"></span> 183mph
+            </p>
+            <a href="#" class="btn fs-5">Buy Now</a>
+          </div>
+        </div>
+
+        <div class="swiper-slide box">
+          <img src="./Ruchika/image/vehicle-3.png" alt="">
+          <div class="content">
+            <h3 class="fs-2">new model</h3>
+            <div class="price fs-4"> <span>price : </span> $62,000/- </div>
+            <p class="fs-6">
+              new
+              <span class="fas fa-circle"></span> 2021
+              <span class="fas fa-circle"></span> automatic
+              <span class="fas fa-circle"></span> petrol
+              <span class="fas fa-circle"></span> 183mph
+            </p>
+            <a href="#" class="btn fs-5">Buy Now</a>
+          </div>
+        </div>
+
+        <div class="swiper-slide box">
+          <img src="./Ruchika/image/vehicle-4.png" alt="">
+          <div class="content">
+            <h3 class="fs-2">new model</h3>
+            <div class="price fs-4"> <span>price : </span> $62,000/- </div>
+            <p class="fs-6">
+              new
+              <span class="fas fa-circle"></span> 2021
+              <span class="fas fa-circle"></span> automatic
+              <span class="fas fa-circle"></span> petrol
+              <span class="fas fa-circle"></span> 183mph
+            </p>
+            <a href="#" class="btn fs-5">Buy Now</a>
+          </div>
+        </div>
+
+        <div class="swiper-slide box">
+          <img src="./Ruchika/image/vehicle-5.png" alt="">
+          <div class="content">
+            <h3 class="fs-2">new model</h3>
+            <div class="price fs-4"> <span>price : </span> $62,000/- </div>
+            <p class="fs-6">
+              new
+              <span class="fas fa-circle"></span> 2021
+              <span class="fas fa-circle"></span> automatic
+              <span class="fas fa-circle"></span> petrol
+              <span class="fas fa-circle"></span> 183mph
+            </p>
+            <a href="#" class="btn fs-5">Buy Now</a>
+          </div>
+        </div>
+
+        <div class="swiper-slide box">
+          <img src="./Ruchika/image/vehicle-6.png" alt="">
+          <div class="content">
+            <h3 class="fs-2">new model</h3>
+            <div class="price fs-4"> <span>price : </span> $62,000/- </div>
+            <p class="fs-6">
+              new
+              <span class="fas fa-circle"></span> 2021
+              <span class="fas fa-circle"></span> automatic
+              <span class="fas fa-circle"></span> petrol
+              <span class="fas fa-circle"></span> 183mph
+            </p>
+            <a href="#" class="btn fs-5">Buy Now</a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="swiper-pagination"></div>
+
+    </div>
+
+  </section>
+  <!-- ---------------------top cars comparison--------------------------------------------------- -->
+
+  <div class="container main">
+    <div class="heading-panel" style="text-align: center">
+
+      <!-- Main Title -->
+      <div class="container d-flex justify-content-center">
+        <h2 class="display-4 text-dark text-center col-auto mb-3" id="heading">Top Cars Comparison</h2>
+      </div>
+      <!-- Short Description -->
+      <p class="fs-5 mb-4">When it comes to buying a car, everyone has different priorities.
+        carspot
+        comes
+        with excellent car comparison features that suits your needs.</p>
+
+    </div>
+    <!-- Home section Top Comparision-->
+    <a href="./Deepika/comparision.html" class="text-dark mb-5">
+      <div class="container-fluid comparisions d-flex align-items-center justify-content-center">
+        <div class="card col-md-6">
+          <img src="./Deepika/Images/img1.jpg" class="card-img-top img-responsive" alt="...">
+          <div class="card-body">
+            <div class="card-text">
+              <h3 class="mb-2 fs-5">2016 Honda Escape cape</h3>
+              <div class="ratings"> <i class="fas fa-star fs-6"></i> <i class="fas fa-star rating-color"></i> <i
+                  class="fas fa-star rating-color"></i> <i class="fas fa-star rating-color"></i> <i
+                  class="far fa-star"></i><span>(4)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="vsbox">
+          <span style="margin: 0rem 1rem;">vs</span>
+        </div>
+        <div class="card col-md-6">
+          <img src="./Deepika/Images/img2.jpg" class="card-img-top img-responsive" alt="...">
+          <div class="card-body">
+            <div class="card-text">
+              <h3 class="mb-2 fs-5">2016 Honda Escape cape</h3>
+              <div class="ratings"> <i class="fas fa-star fs-6"></i> <i class="fas fa-star rating-color"></i> <i
+                  class="fas fa-star rating-color"></i> <i class="fas fa-star rating-color"></i> <i
+                  class="far fa-star"></i><span>(4)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </a>
+    <a href="./Deepika/comparision.html" class="text-dark mb-5">
+      <div class="container-fluid comparisions d-flex align-items-center justify-content-center">
+        <div class="card col-md-6">
+          <img src="./Deepika/Images/img3.jpg" class="card-img-top img-responsive" alt="...">
+          <div class="card-body">
+            <div class="card-text">
+              <h3 class="mb-2 fs-5">2016 Honda Escape cape</h3>
+              <div class="ratings"> <i class="fas fa-star fs-6"></i> <i class="fas fa-star rating-color"></i> <i
+                  class="fas fa-star rating-color"></i> <i class="fas fa-star rating-color"></i> <i
+                  class="far fa-star"></i><span>(4)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="vsbox">
+          <span style="margin: 0rem 1rem;">vs</span>
+        </div>
+        <div class="card col-md-6">
+          <img src="./Deepika/Images/img4.jpg" class="card-img-top img-responsive" alt="...">
+          <div class="card-body">
+            <div class="card-text">
+              <h3 class="mb-2 fs-5">2016 Honda Escape cape</h3>
+              <div class="ratings"> <i class="fas fa-star fs-6"></i> <i class="fas fa-star rating-color"></i> <i
+                  class="fas fa-star rating-color"></i> <i class="fas fa-star rating-color"></i> <i
+                  class="far fa-star"></i><span>(4)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </a>
+    <a href="./Deepika/comparision.html" class="text-dark mb-5">
+      <div class="container-fluid comparisions d-flex align-items-center justify-content-center">
+        <div class="card col-md-6">
+          <img src="./Deepika/Images/img5.png" class="card-img-top img-responsive" alt="...">
+          <div class="card-body">
+            <div class="card-text">
+              <h3 class="mb-2 fs-5">2016 Honda Escape cape</h3>
+              <div class="ratings"> <i class="fas fa-star fs-6"></i> <i class="fas fa-star rating-color"></i> <i
+                  class="fas fa-star rating-color"></i> <i class="fas fa-star rating-color"></i> <i
+                  class="far fa-star"></i><span>(4)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="vsbox">
+          <span style="margin: 0rem 1rem;">vs</span>
+        </div>
+        <div class="card col-md-6">
+          <img src="./Deepika/Images/img6.png" class="card-img-top img-responsive" alt="...">
+          <div class="card-body">
+            <div class="card-text">
+              <h3 class="mb-2 fs-5">2016 Honda Escape cape</h3>
+              <div class="ratings"> <i class="fas fa-star fs-6"></i> <i class="fas fa-star rating-color"></i> <i
+                  class="fas fa-star rating-color"></i> <i class="fas fa-star rating-color"></i> <i
+                  class="far fa-star"></i><span>(4)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </a>
+    <a href="./Deepika/comparision.html" class="text-dark mb-5">
+      <div class="container-fluid comparisions d-flex align-items-center justify-content-center">
+        <div class="card col-md-6">
+          <img src="./Deepika/Images/img7.png" class="card-img-top img-responsive" alt="...">
+          <div class="card-body">
+            <div class="card-text">
+              <h3 class="mb-2 fs-5">2016 Honda Escape cape</h3>
+              <div class="ratings"> <i class="fas fa-star fs-6"></i> <i class="fas fa-star rating-color"></i> <i
+                  class="fas fa-star rating-color"></i> <i class="fas fa-star rating-color"></i> <i
+                  class="far fa-star"></i><span>(4)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="vsbox">
+          <span style="margin: 0rem 1rem;">vs</span>
+        </div>
+        <div class="card col-md-6">
+          <img src="./Deepika/Images/img8.png" class="card-img-top img-responsive" alt="...">
+          <div class="card-body">
+            <div class="card-text">
+              <h3 class="mb-2 fs-5">2016 Honda Escape cape</h3>
+              <div class="ratings"> <i class="fas fa-star fs-6"></i> <i class="fas fa-star rating-color"></i> <i
+                  class="fas fa-star rating-color"></i> <i class="fas fa-star rating-color"></i> <i
+                  class="far fa-star"></i><span>(4)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </a>
+  </div>
+
+  <br>
+  <div class="text-center d-flex justify-content-center mb-5">
+    <a href="./Deepika/compare-ads.html" style="width: fit-content;"> <button class="btn fs-4" type="button"> Compare More
+        Cars</button></a>
+  </div>
+  <!-- -------------------reviews--------------------------------------------------------------- -->
+  <div class="container d-flex flex-column justify-content-center align-items-center">
+    <h2 class="display-4 text-dark text-center col-auto mb-5" id="heading">Top Reviews</h2>
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" style="width: 100%;">
+      <div class="carousel-inner bg-dark p-4">
+        <div class="carousel-item active">
+          <div class="container d-flex justify-content-center align-items-center" id="review">
+            <div class="card m-3 review">
+              <div class="row g-0" style="width: fit-content;">
+                <div class="col-md-4" style="width: 116px; height: 150px; overflow: hidden;">
+                  <img src="https://source.unsplash.com/300x400/?man" class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-md-8" style="width: fit-content;">
+                  <div class="card-body d-flex flex-column justify-content-center">
+                    <h5 class="h5">Harsh Sunwani</h5>
+                    <div class="container mb-3">
+                      <i class="fas fa-star fs-6 rated"></i> <i class="fas fa-star fs-6 rated"></i> <i
+                        class="fas fa-star fs-6 rated"></i> <i class="fas fa-star fs-6 rated"></i> <i
+                        class="fas fa-star fs-6 rated"></i>
+                    </div>
+                    <p class="fs-6">Great Website!</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card m-3 review">
+              <div class="row g-0" style="width: fit-content;">
+                <div class="col-md-4" style="width: 116px; height: 150px; overflow: hidden;">
+                  <img src="https://source.unsplash.com/300x400/?woman" class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-md-8" style="width: fit-content;">
+                  <div class="card-body d-flex flex-column justify-content-center">
+                    <h5 class="h5">Deepika</h5>
+                    <div class="container mb-3">
+                      <i class="fas fa-star fs-6 rated"></i> <i class="fas fa-star fs-6 rated"></i> <i
+                        class="fas fa-star fs-6 rated"></i> <i class="fas fa-star fs-6 rated"></i> <i
+                        class="far fa-star fs-6 rated"></i>
+                    </div>
+                    <p class="fs-6">Great Service</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card m-3 review">
+              <div class="row g-0" style="width: fit-content;">
+                <div class="col-md-4" style="width: 116px; height: 150px; overflow: hidden;">
+                  <img src="https://source.unsplash.com/300x400/?boy" class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-md-8" style="width: fit-content;">
+                  <div class="card-body d-flex flex-column justify-content-center">
+                    <h5 class="h5">Vivek</h5>
+                    <div class="container mb-3">
+                      <i class="fas fa-star fs-6 rated"></i> <i class="fas fa-star fs-6 rated"></i> <i
+                        class="fas fa-star fs-6 rated"></i> <i class="far fa-star fs-6 rated"></i> <i
+                        class="far fa-star fs-6 rated"></i>
+                    </div>
+                    <p class="fs-6">Best Prices</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="container d-flex justify-content-center align-items-center" id="review">
+            <div class="card m-3 review">
+              <div class="row g-0" style="width: fit-content;">
+                <div class="col-md-4" style="width: 116px; height: 150px; overflow: hidden;">
+                  <img src="https://source.unsplash.com/300x400/?man,model" class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-md-8" style="width: fit-content;">
+                  <div class="card-body d-flex flex-column justify-content-center">
+                    <h5 class="h5">Mustafa Berk</h5>
+                    <div class="container mb-3">
+                      <i class="fas fa-star fs-6 rated"></i> <i class="fas fa-star fs-6 rated"></i> <i
+                        class="fas fa-star fs-6 rated"></i> <i class="far fa-star fs-6 rated"></i> <i
+                        class="far fa-star fs-6 rated"></i>
+                    </div>
+                    <p class="fs-6">Sold my car here</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card m-3 review">
+              <div class="row g-0" style="width: fit-content;">
+                <div class="col-md-4" style="width: 116px; height: 150px; overflow: hidden;">
+                  <img src="https://source.unsplash.com/300x400/?woman,model" class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-md-8" style="width: fit-content;">
+                  <div class="card-body d-flex flex-column justify-content-center">
+                    <h5 class="h5">Muskan</h5>
+                    <div class="container mb-3">
+                      <i class="fas fa-star fs-6 rated"></i> <i class="fas fa-star fs-6 rated"></i> <i
+                        class="fas fa-star fs-6 rated"></i> <i class="fas fa-star fs-6 rated"></i> <i
+                        class="far fa-star fs-6 rated"></i>
+                    </div>
+                    <p class="fs-6">Amazing site</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card m-3 review">
+              <div class="row g-0" style="width: fit-content;">
+                <div class="col-md-4" style="width: 116px; height: 150px; overflow: hidden;">
+                  <img src="https://source.unsplash.com/300x400/?boy,model" class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-md-8" style="width: fit-content;">
+                  <div class="card-body d-flex flex-column justify-content-center">
+                    <h5 class="h5">Karthik Kumar</h5>
+                    <div class="container mb-3">
+                      <i class="fas fa-star fs-6 rated"></i> <i class="fas fa-star fs-6 rated"></i> <i
+                        class="fas fa-star fs-6 rated"></i> <i class="fas fa-star fs-6 rated"></i> <i
+                        class="fas fa-star fs-6 rated"></i>
+                    </div>
+                    <p class="fs-6">Best site</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="container d-flex justify-content-center align-items-center" id="review">
+            <div class="card m-3 review">
+              <div class="row g-0" style="width: fit-content;">
+                <div class="col-md-4" style="width: 116px; height: 150px; overflow: hidden;">
+                  <img src="https://source.unsplash.com/300x400/?man,boy" class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-md-8" style="width: fit-content;">
+                  <div class="card-body d-flex flex-column justify-content-center">
+                    <h5 class="h5">Yash Falke</h5>
+                    <div class="container mb-3">
+                      <i class="fas fa-star fs-6 rated"></i> <i class="fas fa-star fs-6 rated"></i> <i
+                        class="fas fa-star fs-6 rated"></i> <i class="fas fa-star fs-6 rated"></i> <i
+                        class="far fa-star fs-6 rated"></i>
+                    </div>
+                    <p class="fs-6">Easily sold my car</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card m-3 review">
+              <div class="row g-0" style="width: fit-content;">
+                <div class="col-md-4" style="width: 116px; height: 150px; overflow: hidden;">
+                  <img src="https://source.unsplash.com/300x400/?man,boy,model" class="img-fluid rounded-start"
+                    alt="...">
+                </div>
+                <div class="col-md-8" style="width: fit-content;">
+                  <div class="card-body d-flex flex-column justify-content-center">
+                    <h5 class="h5">Siddhesh</h5>
+                    <div class="container mb-3">
+                      <i class="fas fa-star fs-6 rated"></i> <i class="fas fa-star fs-6 rated"></i> <i
+                        class="fas fa-star fs-6 rated"></i> <i class="far fa-star fs-6 rated"></i> <i
+                        class="far fa-star fs-6 rated"></i>
+                    </div>
+                    <p class="fs-6">best market prices</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card m-3 review">
+              <div class="row g-0" style="width: fit-content;">
+                <div class="col-md-4" style="width: 116px; height: 150px; overflow: hidden;">
+                  <img src="https://source.unsplash.com/300x400/?woman,girl" class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-md-8" style="width: fit-content;">
+                  <div class="card-body d-flex flex-column justify-content-center">
+                    <h5 class="h5">Jessica</h5>
+                    <div class="container mb-3">
+                      <i class="fas fa-star fs-6 rated"></i> <i class="fas fa-star fs-6 rated"></i> <i
+                        class="fas fa-star fs-6 rated"></i> <i class="fas fa-star fs-6 rated"></i> <i
+                        class="fas fa-star fs-6 rated"></i>
+                    </div>
+                    <p class="fs-6">surly will use again</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon btn-danger" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon btn-danger" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </div>
+  <!-- ---------------------------icons------------------------------------- -->
+  <section class="icons-container">
+
+    <div class="icons">
+        <i class="fas fa-home"></i>
+        <div class="content">
+            <h3 class="fs-4">150+</h3>
+            <p class="fs-5">branches</p>
+        </div>
+    </div>
+
+    <div class="icons">
+        <i class="fas fa-car"></i>
+        <div class="content">
+            <h3 class="fs-4">4770+</h3>
+            <p class="fs-5">cars sold</p>
+        </div>
+    </div>
+
+    <div class="icons">
+        <i class="fas fa-users"></i>
+        <div class="content">
+            <h3 class="fs-4">320+</h3>
+            <p class="fs-5">happy clients</p>
+        </div>
+    </div>
+
+    <div class="icons">
+        <i class="fas fa-car"></i>
+        <div class="content">
+            <h3 class="fs-4">1500+</h3>
+            <p class="fs-5">news cars</p>
+        </div>
+    </div>
+
+</section>
+  <!-- ---------------------------footer------------------------------------ -->
+  <footer class="footer ">
+    <div class="container" id="footer">
+      <div class="row">
+        <div class="footer-col">
+          <h4>company</h4>
+          <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="./Ruchika/about-us/about.html">about us</a></li>
+            <li><a href="./Vivek/Contact Us/contact.html">contact us</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="./Vivek/Login/login.html">My Account</a></li>
+            <li><a href="./Ruchika/our-services/services.html">Our Services</a></li>
+            <li><a href="./Deepika/compare-ads.html">Compare ADS</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Get Our Apps</h4>
+          <ul>
+            <li><a href="https://play.google.com/store"><i class="fab fa-google-play" style="font-size: 40px;"></i> GET IT ON<br>Google Play</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>follow us</h4>
+          <div class="social-links">
+            <a href="https://www.facebook.com/groups/548497788690048/"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com/studentwebguide?lang=en"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/web_student/?hl=en"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/company/web-student/?originalSubdomain=in"><i
+                class="fab fa-linkedin-in"></i></a>
+            <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.pinterest.com/"><i class="fab fa-pinterest"></i></a>
+            <a href="https://www.snapchat.com/"><i class="fab fa-snapchat"></i></a>
+            <a href="https://www.google.com/"><i class="fab fa-google-plus-g"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div class="down">
+    <p
+      style="background-color: #18191A; color: #ddd; width: 100%; height: 75px; text-align: center; line-height: 75px;">
+      <i class="far fa-copyright"></i>
+      Copyright 2021 Carinian, All rights reserved.
+    </p>
+  </div>
+  <!-- --------------------------------------------------------------------- -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+    integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+    integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+    crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+  <script src="home.js"></script>
+</body>
+</html>
